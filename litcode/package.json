@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "@uiw/react-textarea-code-editor": "^1.4.4",
+    "flowbite": "^1.5.4",
+    "flowbite-react": "^0.3.5",
     "next": "13.0.4",
     "next-remove-imports": "^1.0.8",
     "react": "18.2.0",

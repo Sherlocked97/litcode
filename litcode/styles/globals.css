@@ -26,7 +26,9 @@ a {
   body {
     color: rgb(99, 201, 102);
     background: black;
-	text-align: center;
+	text-align: left;
+	/* padding-left: 2cm;
+	padding-top: 1cm; */
 	font-size: 16pt;
   }
 }
