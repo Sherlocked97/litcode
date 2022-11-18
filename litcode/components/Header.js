@@ -7,7 +7,7 @@ export default function Header() {
 		<header className="bg-black p-1.5">
 			<div className="flex justify-between items-center">
 					<a className="font-sans font-bold text-xl" href="/">
-						<span role="img" aria-label="Books">💻</span>
+						<span role="img" aria-label="Laptop">💻</span>
 							42rank
 					</a>
 			</div>

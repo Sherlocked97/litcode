@@ -1,10 +1,42 @@
+import React from "react"
+import dynamic from "next/dynamic";
+import "@uiw/react-textarea-code-editor/dist.css";
+
+const CodeEditor = dynamic(
+	() => import("@uiw/react-textarea-code-editor").then((mod) => mod.default),
+	{ ssr: false }
+  );
+
 export default function SolutionArea() {
+	const [code, setCode] = React.useState(
+	`function add(a, b) {\n  return a + b;\n}`
+	);
+
 	return (
-		<div class="code-area">
-			{/* <textarea rows="20" class="input" id="code" autofocus></textarea> */}
-			{/* <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label> */}
-			<div>
-				<textarea id="message" rows="25" class="block p-2.5 w-96 text-sm text-gray-900 bg-green-50 rounded-lg border border-green-300 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Your Solution..."></textarea>
+		<div className="code-area">
+			<div className="w-60 border-2 rounder-l">
+				<CodeEditor
+					value={code}
+					language="c"
+					placeholder="Please enter your solution."
+					onChange={(evn) => setCode(evn.target.value)}
+					padding={15}
+					style={{
+						fontSize: 12,
+						backgroundColor: "#f5f5f5",
+						fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
+					}}
+				/>
+			</div>
+			<div className="mr-4 pt-2 pr-80">
+				<div className="mt-2">
+					<button className="text-base bg-transparent hover:bg-green-500 text-green-700 font-mono hover:text-white py-0 px-2 border border-green-500 hover:border-transparent rounded">
+						Submit
+					</button>
+					<button className="ml-10 text-base bg-transparent hover:bg-green-500 text-green-700 font-mono hover:text-white py-0 px-2 border border-green-500 hover:border-transparent rounded">
+						Test
+					</button>
+				</div>
 			</div>
 		</div>
 	)
