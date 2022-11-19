@@ -1,3 +1,5 @@
+import { redirect } from 'next/dist/server/api-utils';
+
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const { ClientCredentials, ResourceOwnerPassword, AuthorizationCode } = require('simple-oauth2');
 

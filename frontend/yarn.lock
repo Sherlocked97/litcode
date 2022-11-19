@@ -280,6 +280,44 @@
   dependencies:
     "@floating-ui/dom" "^1.0.5"
 
+"@hapi/boom@^10.0.0":
+  "integrity" "sha512-1YVs9tLHhypBqqinKQRqh7FUERIolarQApO37OWkzD+z6y6USi871Sv746zBPKcIOBuI6g6y4FrwX87mmJ90Gg=="
+  "resolved" "https://registry.npmjs.org/@hapi/boom/-/boom-10.0.0.tgz"
+  "version" "10.0.0"
+  dependencies:
+    "@hapi/hoek" "10.x.x"
+
+"@hapi/bourne@^3.0.0":
+  "integrity" "sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w=="
+  "resolved" "https://registry.npmjs.org/@hapi/bourne/-/bourne-3.0.0.tgz"
+  "version" "3.0.0"
+
+"@hapi/hoek@^10.0.0", "@hapi/hoek@^10.0.1", "@hapi/hoek@10.x.x":
+  "integrity" "sha512-CvlW7jmOhWzuqOqiJQ3rQVLMcREh0eel4IBnxDx2FAcK8g7qoJRQK4L1CPBASoCY6y8e6zuCy3f2g+HWdkzcMw=="
+  "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-10.0.1.tgz"
+  "version" "10.0.1"
+
+"@hapi/hoek@^9.0.0":
+  "integrity" "sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ=="
+  "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.3.0.tgz"
+  "version" "9.3.0"
+
+"@hapi/topo@^5.0.0":
+  "integrity" "sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg=="
+  "resolved" "https://registry.npmjs.org/@hapi/topo/-/topo-5.1.0.tgz"
+  "version" "5.1.0"
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@hapi/wreck@^18.0.0":
+  "integrity" "sha512-Yk9STxoM06Hjjq58cH0KFG91u9F2h9eVE72o8vUr3AfK80qt7I2POG5+cDGTEntbnvvzm0ERow2sjG3QsqCWUA=="
+  "resolved" "https://registry.npmjs.org/@hapi/wreck/-/wreck-18.0.0.tgz"
+  "version" "18.0.0"
+  dependencies:
+    "@hapi/boom" "^10.0.0"
+    "@hapi/bourne" "^3.0.0"
+    "@hapi/hoek" "^10.0.0"
+
 "@headlessui/react@^1.7.4":
   "integrity" "sha512-D8n5yGCF3WIkPsjEYeM8knn9jQ70bigGGb5aUvN6y4BGxcT3OcOQOKcM3zRGllRCZCFxCZyQvYJF6ZE7bQUOyQ=="
   "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.7.4.tgz"
@@ -401,6 +439,23 @@
   "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
   "version" "2.11.6"
+
+"@sideway/address@^4.1.3":
+  "integrity" "sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw=="
+  "resolved" "https://registry.npmjs.org/@sideway/address/-/address-4.1.4.tgz"
+  "version" "4.1.4"
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@sideway/formula@^3.0.0":
+  "integrity" "sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg=="
+  "resolved" "https://registry.npmjs.org/@sideway/formula/-/formula-3.0.0.tgz"
+  "version" "3.0.0"
+
+"@sideway/pinpoint@^2.0.0":
+  "integrity" "sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ=="
+  "resolved" "https://registry.npmjs.org/@sideway/pinpoint/-/pinpoint-2.0.0.tgz"
+  "version" "2.0.0"
 
 "@swc/helpers@0.4.11":
   "integrity" "sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw=="
@@ -1119,7 +1174,7 @@
   "resolved" "https://registry.npmjs.org/debounce/-/debounce-1.2.1.tgz"
   "version" "1.2.1"
 
-"debug@^4.1.0":
+"debug@^4.1.0", "debug@^4.3.4":
   "integrity" "sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
   "version" "4.3.4"
@@ -1767,6 +1822,17 @@
     "@types/node" "*"
     "merge-stream" "^2.0.0"
     "supports-color" "^8.0.0"
+
+"joi@^17.6.4":
+  "integrity" "sha512-1/ugc8djfn93rTE3WRKdCzGGt/EtiYKxITMO4Wiv6q5JL1gl9ePt4kBsl1S499nbosspfctIQTpYIhSmHA3WAg=="
+  "resolved" "https://registry.npmjs.org/joi/-/joi-17.7.0.tgz"
+  "version" "17.7.0"
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.3"
+    "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
 
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
@@ -2547,6 +2613,16 @@
   "integrity" "sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ=="
   "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   "version" "3.0.7"
+
+"simple-oauth2@^5.0.0":
+  "integrity" "sha512-8291lo/z5ZdpmiOFzOs1kF3cxn22bMj5FFH+DNUppLJrpoIlM1QnFiE7KpshHu3J3i21TVcx4yW+gXYjdCKDLQ=="
+  "resolved" "https://registry.npmjs.org/simple-oauth2/-/simple-oauth2-5.0.0.tgz"
+  "version" "5.0.0"
+  dependencies:
+    "@hapi/hoek" "^10.0.1"
+    "@hapi/wreck" "^18.0.0"
+    "debug" "^4.3.4"
+    "joi" "^17.6.4"
 
 "source-map-js@^1.0.2":
   "integrity" "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="

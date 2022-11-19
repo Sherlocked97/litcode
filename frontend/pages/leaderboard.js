@@ -1,11 +1,13 @@
-import Table from "../components/Table"
+import { Tab } from "@headlessui/react"
 import Header from "../components/Header"
+import Layout from "../components/Layout"
+import Table42 from "../components/Table42"
 
-function Leaderboard() {
+export default function leaderboard() {
 	return (
-		<Layout pageTitle="Welcome to 42rank">
-		<Header />
-		<Table/>
-	</Layout>
+		<Layout pageTitle="42rank">
+			<Header />
+			<Table42 />
+		</Layout>
 	)
 }
