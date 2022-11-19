@@ -1,5 +1,4 @@
 import { Menu } from '@headlessui/react'
-import { Bars4Icon } from '@heroicons/react/24/solid'
 
 export default function MyDropdown() {
 	const items = [
@@ -7,8 +6,8 @@ export default function MyDropdown() {
 		{name: "What is this about?", disabled:false}]
   return (
     <Menu>
-      <Menu.Button className="pt-10 p-10"><Bars4Icon className="h-10 w-10 text-[#63C966]-500"/></Menu.Button>   {/* Here Name and padding of dropdown */}
-      <Menu.Items className="absolute left text-base font-mono">
+      <Menu.Button className="pt-10 p-10">More</Menu.Button>   {/* Here Name and padding of dropdown */}
+      <Menu.Items className="w-20 p-10">
 		{items.map(item=>(
         <><Menu.Item>
 				{({ active }) => (
@@ -25,3 +24,22 @@ export default function MyDropdown() {
     </Menu>
   )
 }
+
+
+
+import Header from "../components/Header"
+import Layout from "../components/Layout"
+import IDE from "../components/IDE"
+import Nav from "../components/NavBar"
+import MyDropdown from "../components/MyDropdown"
+
+function Index() {
+	return (
+		<Layout pageTitle="Welcome to 42rank">
+			<MyDropdown />
+		</Layout>
+	)
+}
+export default Index
+
+

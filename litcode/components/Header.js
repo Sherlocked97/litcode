@@ -1,18 +1,24 @@
 import Link from "next/link"
-import Nav from "./NavBar"
+import BluePill from "../components/bluePill"
+import Pic42 from "../components/Pic42"
+import MyDropdown from "../components/MyDropdown"
+import { LockClosedIcon } from '@heroicons/react/24/solid'
 
 export default function Header() {
 	return (
 	<div>
 		<header className="bg-black p-1.5">
 			<div className="flex justify-between items-center">
-					<a className="font-sans font-bold text-xl" href="/">
-						<span role="img" aria-label="Laptop">💻</span>
-							42rank
-					</a>
-			</div>
 			<div>
-				<Nav/>
+				<MyDropdown />
+			</div>
+			<div class="flex justify-center items-center">
+				<Pic42 />
+			</div>
+					<a className="pr-20">
+						<BluePill />
+						{/* <LockClosedIcon className="h-10 w-10 text-[@63C966]-500"/> */}
+					</a>
 			</div>
 		</header>
 	</div>
