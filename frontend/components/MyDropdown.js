@@ -19,13 +19,13 @@ export default function MyDropdown() {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
       >
-	  <Menu.Items className="absolute left text-base font-mono">
+	  <Menu.Items className="absolute left text-base font-mono ml-6">
 		{links.map(link=>(
         <Menu.Item key={links.href} as={Fragment}>
 			{({ active }) => (
               <a
 			  href={link.href}
-			  className={`${active && '[#32682F]'} rounded-md p-1`}
+			  className={`${active && '[#32682F]'} rounded-md pl-5 py-5`}
 			>
 			  {link.label}<br></br>
 			</a>

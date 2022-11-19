@@ -1,11 +1,11 @@
-import Link from "next/link"
+import Table from "../components/Table"
+import Header from "../components/Header"
 
-export default function leaderboards() {
+function Leaderboard() {
 	return (
-			<div className="font-mono">
-				<div>
-					Navbar.js
-				</div>
-			</div>
+		<Layout pageTitle="Welcome to 42rank">
+		<Header />
+		<Table/>
+	</Layout>
 	)
 }
