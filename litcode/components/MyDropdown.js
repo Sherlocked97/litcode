@@ -4,8 +4,8 @@ import { Bars4Icon } from '@heroicons/react/24/solid'
 
 export default function MyDropdown() {
 	const links = [
-			{ href: '/leaderboard', label: 'Leaderboard', disabled: false},
-			{ href: '/about', label: 'What is this about?', disabled: false },
+			{ key: '0', href: '/leaderboard', label: 'Leaderboard', disabled: false},
+			{ key: '1', href: '/about', label: 'What is this about?', disabled: false },
 		  ]
   return (
     <Menu>
