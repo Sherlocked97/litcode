@@ -29,4 +29,26 @@ a {
 	text-align: center;
 	font-size: 16pt;
   }
+
+  .box h2 {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+  }
+
+
+  .box h2::after {
+	content: "";
+	width: 5px;
+	height: 20px;
+	background: #63C966;
+	display: inline-block;
+	animation: cursor-blink 1.5s steps(2) infinite;
+  }
+
+  @keyframes cursor-blink {
+	0% {
+	  opacity: 0;
+	}
+  }
 }

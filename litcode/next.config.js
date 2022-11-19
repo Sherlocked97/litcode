@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  rewrites: async () => [
+    {
+      source: "/",
+      destination: "/terminal.html",
+    },
+  ],
 }
 const removeImports = require("next-remove-imports")();
 module.exports = removeImports({

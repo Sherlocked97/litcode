@@ -1,13 +1,27 @@
+import { useRouter } from "next/router"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
-import IDE from "../components/IDE"
+import RanksPicThick from "../components/asciiCode"
 
-const Index = () => {
+function Index() {
+	const router = useRouter()
+
 	return (
-		<Layout pageTitle="Welcome to 42rank">
-			<Header />
-			<IDE/>
-		</Layout>
+			<Layout pageTitle="Welcome to 42rank">
+				<Header />
+				<div class="pt-10 pl-10 flex justify-center items-center">
+					<RanksPicThick />
+				</div>
+				<div class ="flex justify-center pt-20">
+					<span class="box">
+						<button onClick={() => router.push("/challenge")}>
+							<h2 className="font-mono">
+								{`>`}cd challenge
+							</h2>
+						</button>
+					</span>
+				</div>
+			</Layout>
 	)
 }
 export default Index
